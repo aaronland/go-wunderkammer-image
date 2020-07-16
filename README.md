@@ -139,5 +139,4 @@ But maybe not for this one:
 
 ## See also
 
-* https://github.com/aaronland/go-wunderkammer
-* https://github.com/aaronland/ios-wunderkammer
+* https://github.com/search?q=topic%3Awunderkammer+org%3Aaaronland&type=Repositories
