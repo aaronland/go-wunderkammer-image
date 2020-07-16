@@ -1,5 +1,7 @@
 # go-wunderkammer-image
 
+Go package for image-related operations in "wunderkammer" databases. 
+
 ## Important
 
 This is work in progress.
