@@ -1,0 +1,35 @@
+# github.com/MaxHalford/halfgone v0.0.0-20171017091812-482157b86ccb
+github.com/MaxHalford/halfgone
+# github.com/aaronland/go-image-decode v0.0.2
+github.com/aaronland/go-image-decode
+# github.com/aaronland/go-image-encode v0.0.0-20200215191655-047f61aedbfe
+github.com/aaronland/go-image-encode
+# github.com/aaronland/go-image-halftone v0.0.1
+github.com/aaronland/go-image-halftone
+# github.com/aaronland/go-image-resize v0.0.0-20200215211032-65f2cf14b638
+github.com/aaronland/go-image-resize
+# github.com/aaronland/go-image-rotate v0.0.2
+github.com/aaronland/go-image-rotate
+github.com/aaronland/go-image-rotate/imaging
+# github.com/aaronland/go-image-transform v0.0.0-20200216021135-f5c5cf8fc134
+github.com/aaronland/go-image-transform
+# github.com/aaronland/go-roster v0.0.1
+github.com/aaronland/go-roster
+# github.com/aaronland/go-wunderkammer v0.0.3
+github.com/aaronland/go-wunderkammer/oembed
+# github.com/esimov/caire v1.2.6
+github.com/esimov/caire
+# github.com/esimov/pigo v1.3.0
+github.com/esimov/pigo/core
+# github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646
+github.com/nfnt/resize
+# github.com/pkg/errors v0.8.0
+github.com/pkg/errors
+# github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd
+github.com/rwcarlsen/goexif/exif
+github.com/rwcarlsen/goexif/mknote
+github.com/rwcarlsen/goexif/tiff
+# github.com/tidwall/pretty v1.0.1
+github.com/tidwall/pretty
+# golang.org/x/image v0.0.0-20180708004352-c73c2afc3b81
+golang.org/x/image/bmp
