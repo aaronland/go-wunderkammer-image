@@ -195,3 +195,56 @@ func (db *SQLOEmbedDatabase) GetOEmbedWithObjectURI(ctx context.Context, object_
 
 	return photos, nil
 }
+
+func (db *SQLOEmbedDatabase) GetOEmbedWithCallback(ctx context.Context, cb OEmbedDatabaseCallback) error {
+
+	q := "SELECT body FROM oembed"
+
+	rows, err := db.conn.QueryContext(ctx, q)
+
+	if err != nil {
+
+		return err
+	}
+
+	defer rows.Close()
+
+	for rows.Next() {
+
+		var body []byte
+
+		err := rows.Scan(&body)
+
+		if err != nil {
+			return err
+		}
+
+		var ph *Photo
+
+		err = json.Unmarshal(body, &ph)
+
+		if err != nil {
+			return err
+		}
+
+		err = cb(ctx, ph)
+
+		if err != nil {
+			return err
+		}
+	}
+
+	err = rows.Close()
+
+	if err != nil {
+		return err
+	}
+
+	err = rows.Err()
+
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
