@@ -22,6 +22,8 @@ Update a stream of line-separated OEmbed JSON records to append a base64 encoded
 ```
 $> ./bin/append-dataurl -h
 Usage of ./bin/append-dataurl:
+  -append-thumbnail
+    	Append data URL for thumbnail_url if present. (default true)
   -auto-rotate
     	Auto-rotate image based on EXIF data
   -content-aware-height int
