@@ -6,8 +6,8 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
+	"github.com/aaronland/go-wunderkammer-image"
 	"github.com/aaronland/go-wunderkammer/oembed"
-	"github.com/aaronland/go-wunderkammer-image"	
 	"github.com/tidwall/pretty"
 	"io"
 	"io/ioutil"
@@ -35,6 +35,8 @@ func main() {
 
 	format_json := flag.Bool("format", false, "Emit results as formatted JSON.")
 	as_json := flag.Bool("json", false, "Emit results as a JSON array.")
+
+	append_thumbnail := flag.Bool("append-thumbnail", true, "Append data URL for thumbnail_url if present.")
 
 	to_stdout := flag.Bool("stdout", true, "Emit to STDOUT")
 	to_devnull := flag.Bool("null", false, "Emit to /dev/null")
@@ -187,6 +189,39 @@ func main() {
 				}
 
 				rec.DataURL = data_url
+			}
+
+			if *append_thumbnail && rec.ThumbnailURL != "" {
+
+				if rec.ThumbnailDataURL == "" || *overwrite {
+
+					opts := &image.DataURLOptions{
+						// ContentAwareResize: *content_aware_resize,
+						// ContentAwareWidth:  *content_aware_width,
+						// ContentAwareHeight: *content_aware_height,
+						// Resize:             *resize,
+						// ResizeMaxDimension: *resize_max_dimension,
+						Dither:     *dither,
+						Format:     *image_format,
+						AutoRotate: *auto_rotate,
+					}
+
+					data_url, err := image.DataURL(ctx, rec.ThumbnailURL, opts)
+
+					if err != nil {
+
+						log.Printf("Failed to populate data URL for '%s', %v\n", rec.URL, err)
+
+						if *strict {
+							cancel()
+						}
+
+						return
+					}
+
+					rec.ThumbnailDataURL = data_url
+
+				}
 			}
 
 			body, err := json.Marshal(rec)

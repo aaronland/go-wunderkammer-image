@@ -15,7 +15,7 @@ github.com/aaronland/go-image-rotate/imaging
 github.com/aaronland/go-image-transform
 # github.com/aaronland/go-roster v0.0.1
 github.com/aaronland/go-roster
-# github.com/aaronland/go-wunderkammer v0.0.7
+# github.com/aaronland/go-wunderkammer v0.0.8
 github.com/aaronland/go-wunderkammer/oembed
 # github.com/esimov/caire v1.2.6
 github.com/esimov/caire

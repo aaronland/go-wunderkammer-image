@@ -25,6 +25,8 @@ github.com/aaronland/go-wunderkammer v0.0.3 h1:+QErFTwLArmpw2qVyrFHcwJaR4KOPy728
 github.com/aaronland/go-wunderkammer v0.0.3/go.mod h1:EzL8GXMRmsDWnjdj3JG+WdtEtlX15OAAAOnPTyyLhik=
 github.com/aaronland/go-wunderkammer v0.0.7 h1:RccHrfx52YmEO8dGOcuyWCraHtHLJSSI4JbL/FXEQBQ=
 github.com/aaronland/go-wunderkammer v0.0.7/go.mod h1:DeyuzEzSZ59ikUbAQ+ulHRMLxTx4Nz7Q2uA9neLvnbs=
+github.com/aaronland/go-wunderkammer v0.0.8 h1:Tteb6riIqBClbG+ZSDQma1gzsQEdyOitLE14ZRl7/5s=
+github.com/aaronland/go-wunderkammer v0.0.8/go.mod h1:DeyuzEzSZ59ikUbAQ+ulHRMLxTx4Nz7Q2uA9neLvnbs=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/disintegration/imaging v1.6.1/go.mod h1:xuIt+sRxDFrHS0drzXUlCJthkJ8k7lkkUojDSR247MQ=
 github.com/esimov/caire v1.2.6 h1:H9exIlMNNsBC0FDL2blFPVBPClqKAm/KU385Jgf5NAc=
